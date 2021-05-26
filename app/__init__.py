@@ -40,4 +40,7 @@ def create_app(config_class=Config):
         from app.blueprints.api import bp as api
         app.register_blueprint(api)
 
+        from app.blueprints.shop import bp as shop
+        app.register_blueprint(shop)
+
     return app
